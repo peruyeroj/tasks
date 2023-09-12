@@ -4,7 +4,7 @@
  *      C = (F - 32) * 5/9
  */
 export function fahrenheitToCelius(temperature: number): number {
-    let celsius: number = (temperature - 32) * (5 / 9);
+    const celsius: number = (temperature - 32) * (5 / 9);
     return celsius;
 }
 
@@ -45,7 +45,7 @@ export function add3(first: number, second: number, third: number): number {
  * mark added to the end.
  */
 export function shout(message: string): string {
-    let upperCase: string = message.toUpperCase();
+    const upperCase: string = message.toUpperCase();
 
     return upperCase + "!";
 }
@@ -55,7 +55,7 @@ export function shout(message: string): string {
  * mark. Do not use an `if` statement in solving this question.
  */
 export function isQuestion(message: string): boolean {
-    let question: boolean = message.endsWith("?");
+    const question: boolean = message.endsWith("?");
     return question;
 }
 
